@@ -19,12 +19,12 @@
     <repository>
       <id>zcard-releases</id>
       <name>zcard-releases</name>
-      <url>http://ec2-18-220-184-62.us-east-2.compute.amazonaws.com:8081/nexus/content/repositories/zcard-releases/</url>
+      <url>http://ec2-3-17-59-234.us-east-2.compute.amazonaws.com:8081/nexus/content/repositories/zcard-releases/</url>
     </repository>
     <snapshotRepository>
       <id>z-cardsnapshots</id>
       <name>z-cardsnapshots</name>
-      <url>http://ec2-18-220-184-62.us-east-2.compute.amazonaws.com:8081/nexus/content/repositories/z-cardsnapshots/</url>
+      <url>http://ec2-3-17-59-234.us-east-2.compute.amazonaws.com:8081/nexus/content/repositories/z-cardsnapshots/</url>
     </snapshotRepository>
   </distributionManagement>
 
