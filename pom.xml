@@ -4,7 +4,7 @@
   <groupId>com.mycompany.app</groupId>
   <artifactId>z-card</artifactId>
   <packaging>jar</packaging>
-  <version>4.0</version>
+  <version>5.0-SNAPSHOT</version>
   <name>z-card</name>
   <url>http://maven.apache.org</url>
   <dependencies>
