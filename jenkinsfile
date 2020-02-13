@@ -19,7 +19,7 @@ node('nexus-node') {
          }
       }
    }
-   stage('sonar') {
+   stage('sonarqube') {
       sh "'${mvnHome}/bin/mvn' sonar:sonar"
    }
    stage('Results') {
