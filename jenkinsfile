@@ -19,6 +19,9 @@ node('nexus-node') {
          }
       }
    }
+   stage('sonar') {
+      sh "'${mvnHome}/bin/mvn' sonar:sonar"
+   }
    stage('Results') {
       junit '**/target/surefire-reports/TEST-*.xml'
       archiveArtifacts 'target/*.jar'
