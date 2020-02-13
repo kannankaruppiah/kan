@@ -4,7 +4,7 @@
   <groupId>com.mycompany.app</groupId>
   <artifactId>z-card</artifactId>
   <packaging>jar</packaging>
-  <version>5.0-SNAPSHOT</version>
+  <version>6.0-SNAPSHOT</version>
   <name>z-card</name>
   <url>http://maven.apache.org</url>
   <dependencies>
@@ -19,12 +19,12 @@
     <repository>
       <id>zcard-releases</id>
       <name>zcard-releases</name>
-      <url>http://ec2-3-17-59-234.us-east-2.compute.amazonaws.com:8081/nexus/content/repositories/zcard-releases/</url>
+      <url>http://ec2-18-223-134-209.us-east-2.compute.amazonaws.com:8081/nexus/content/repositories/zcard-releases/</url>
     </repository>
     <snapshotRepository>
       <id>z-cardsnapshots</id>
       <name>z-cardsnapshots</name>
-      <url>http://ec2-3-17-59-234.us-east-2.compute.amazonaws.com:8081/nexus/content/repositories/z-cardsnapshots/</url>
+      <url>http://ec2-18-223-134-209.us-east-2.compute.amazonaws.com:8081/nexus/content/repositories/z-cardsnapshots/</url>
     </snapshotRepository>
   </distributionManagement>
 
