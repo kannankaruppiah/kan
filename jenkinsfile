@@ -39,6 +39,6 @@ node('nexus-node') {
       myreflibrary ('Kannan','esx-01','9090')
   }
   stage('sharedlibrary'){
-      sayhello "Devops Course" 
+      sayHello "Devops Course" 
   }
 }
