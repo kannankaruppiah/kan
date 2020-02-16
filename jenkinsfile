@@ -1,4 +1,4 @@
-def myreflibrary(string name,string hostname,string port){
+def myreflibrary(String name,String hostname,String port){
 echo "Hello, ${name}."
 echo "Hello, ${hostname}."
 echo "Hello, ${port}."
