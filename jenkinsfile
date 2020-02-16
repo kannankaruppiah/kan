@@ -34,4 +34,5 @@ node('nexus-node') {
    }
    stage('myreflibrary'){
       myreflibrary ('Kannan','esx-01','9090')
+  }
 }
