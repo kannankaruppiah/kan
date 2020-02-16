@@ -1,8 +1,11 @@
+@Library('pipeline-library-demo')
+
 def myreflibrary(String name,String hostname,String port){
 echo "Hello, ${name}."
 echo "Hello, ${hostname}."
 echo "Hello, ${port}."
 }
+
 
 node('nexus-node') {
    def mvnHome
@@ -34,5 +37,8 @@ node('nexus-node') {
    }
    stage('myreflibrary'){
       myreflibrary ('Kannan','esx-01','9090')
+  }
+  stage('sharedlibrary'){
+      sayhello "Devops Course" 
   }
 }
