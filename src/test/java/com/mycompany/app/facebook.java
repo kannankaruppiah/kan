@@ -12,7 +12,7 @@ public class facebook {
 	 WebDriver driver;
 	@BeforeMethod
 	public void launch() {
-		System.setProperty("webdriver.gecko.driver", "/home/ubuntu/geckodriver.exe");
+		System.setProperty("webdriver.gecko.driver", "/usr/bin/firefoxdriver");
 		  driver = new FirefoxDriver();
 		  driver.get("http://www.facebook.com");
 		  driver.manage().window().maximize();
