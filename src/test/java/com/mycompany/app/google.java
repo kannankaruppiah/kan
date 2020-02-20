@@ -14,7 +14,7 @@ public class google {
 	@BeforeMethod
 	public void launch() throws MalformedURLException { 
 		
-		  DesiredCapabilities cap=DesiredCapabilities.firefox();
+		  DesiredCapabilities cap=DesiredCapabilities.FIREFOX();
 		  driver=new RemoteWebDriver(new URL("http://172.31.41.66:4444/wd/hub"), cap);
 		  driver.get("http://www.google.com");
 		  driver.manage().window().maximize();
