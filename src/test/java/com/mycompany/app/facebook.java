@@ -7,11 +7,12 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
+import java.net.MalformedURLException;
 
 public class facebook {
 	 WebDriver driver;
 	@BeforeMethod
-	public void launch() {
+	public void launch() throws MalformedURLException {
 		
 		  DesiredCapabilities cap=DesiredCapabilities.firefox();
 		  driver=new RemoteWebDriver(new URL("http://172.31.41.66:4444/wd/hub"), cap);
