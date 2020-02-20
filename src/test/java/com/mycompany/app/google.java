@@ -12,10 +12,9 @@ public class google {
 	 WebDriver driver;
 	@BeforeMethod
 	public void launch() {
-		//System.setProperty("webdriver.gecko.driver", "/usr/bin/firefoxdriver");
-		  //driver = new FirefoxDriver();
+		
 		  DesiredCapabilities cap=DesiredCapabilities.firefox();
-		  driver=new RemoteWebDriver(new URL("http://172.31.41.66:4444/wd/hub"),cap);
+		  driver=new RemoteWebDriver(new URL("http://172.31.41.66:4444/wd/hub"), cap);
 		  driver.get("http://www.google.com");
 		  driver.manage().window().maximize();
 		  driver.manage().timeouts().implicitlyWait(20,TimeUnit.SECONDS);
