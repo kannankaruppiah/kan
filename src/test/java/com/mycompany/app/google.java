@@ -4,6 +4,7 @@ import java.net.MalformedURLException;
 import java.net.URL;
 import java.util.concurrent.TimeUnit;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.firefox.FirefoxOptions;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
 import org.testng.annotations.AfterMethod;
@@ -16,7 +17,8 @@ public class google {
 	public void launch() throws MalformedURLException {
 		//System.setProperty("webdriver.gecko.driver", "/Users/kannan/Downloads/geckodriver.exe");
 		  //driver = new FirefoxDriver();
-		  DesiredCapabilities dc = DesiredCapabilities.firefox();
+		  FirefoxOptions dc = new FirefoxOptions();
+                  //DesiredCapabilities dc = DesiredCapabilities.firefox();
 		  //RemoteWebDriver driver;
 		  driver = new RemoteWebDriver (new URL("http://172.31.28.55:4444/wd/hub"),dc);
 		  //driver = new FirefoxDriver();

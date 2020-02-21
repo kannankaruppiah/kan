@@ -7,6 +7,7 @@ import java.util.concurrent.TimeUnit;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;
+import org.openqa.selenium.firefox.FirefoxOptions;
 import org.openqa.selenium.remote.RemoteWebDriver;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
@@ -18,8 +19,9 @@ public class facebook {
 	public void launch() throws MalformedURLException {
 		  //System.setProperty("webdriver.gecko.driver", "/Users/kannan/Downloads/geckodriver.exe");
 		  //driver = new FirefoxDriver();
-		  DesiredCapabilities dc = DesiredCapabilities.firefox();
-		  //RemoteWebDriver driver;
+		  //DesiredCapabilities dc = DesiredCapabilities.firefox();
+		  FirefoxOptions dc = new FirefoxOptions();
+                  //RemoteWebDriver driver;
 		  driver = new RemoteWebDriver (new URL("http://172.31.28.55:4444/wd/hub"),dc);
 		  driver.get("http://www.facebook.com");
 		  driver.manage().window().maximize();
