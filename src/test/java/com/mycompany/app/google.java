@@ -1,4 +1,4 @@
-mckage TestNG;
+package TestNG;
 
 import java.net.MalformedURLException;
 import java.net.URL;
