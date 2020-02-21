@@ -1,22 +1,26 @@
 package TestNG;
 
+import java.net.MalformedURLException;
+import java.net.URL;
 import java.util.concurrent.TimeUnit;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.remote.DesiredCapabilities;
+import org.openqa.selenium.remote.RemoteWebDriver;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
-import java.net.MalformedURLException;
-import org.openqa.selenium.remote.DesiredCapabilities;
 
 public class facebook {
 	 WebDriver driver;
 	@BeforeMethod
 	public void launch() throws MalformedURLException {
-		
-		  DesiredCapabilities cap=DesiredCapabilities.firefox();
-		  driver=new RemoteWebDriver(new URL("http://172.31.41.66:4444/wd/hub"), cap);
+		  //System.setProperty("webdriver.gecko.driver", "/Users/kannan/Downloads/geckodriver.exe");
+		  //driver = new FirefoxDriver();
+		  DesiredCapabilities dc = DesiredCapabilities.firefox();
+		  //RemoteWebDriver driver;
+		  driver = new RemoteWebDriver (new URL("http://172.31.28.55:4444/wd/hub"),dc);
 		  driver.get("http://www.facebook.com");
 		  driver.manage().window().maximize();
 		  driver.manage().timeouts().implicitlyWait(20,TimeUnit.SECONDS);
